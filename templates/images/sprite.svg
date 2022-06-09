@@ -1,0 +1,127 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.54 29.39" id="bag">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <path d="M16.82,5.94V0H5.73V5.94H0V29.39H22.54V5.94ZM8.23,2.5h6.09V5.94H8.23ZM20,26.89H2.5V8.44H5.73v2.27h2.5V8.44h6.09v2.27h2.5V8.44H20Z"></path>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.48 29.48" id="cancle">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <polygon points="29.48 1.77 27.72 0 14.74 12.97 1.77 0 0 1.77 12.97 14.74 0 27.72 1.77 29.48 14.74 16.51 27.72 29.48 29.48 27.72 16.51 14.74 29.48 1.77"></polygon>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.98 29.25" id="left">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <polygon points="12.05 29.25 0 14.62 12.05 0 13.98 1.59 3.24 14.62 13.98 27.66 12.05 29.25"></polygon>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.68 29.25" id="left_arrow">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <polygon points="38.68 13.38 4.26 13.38 13.98 1.59 12.05 0 0 14.62 12.05 29.25 13.98 27.66 4.28 15.88 38.68 15.88 38.68 13.38"></polygon>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.53 51.14" id="logo">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <g>
+          <g>
+            <polygon points="38.53 22.99 38.53 31.3 0 38.54 0 30.22 38.53 22.99"></polygon>
+            <polygon points="38.53 11.49 38.53 19.81 0 27.05 0 18.73 38.53 11.49"></polygon>
+            <polygon points="38.53 0 38.53 8.33 0 15.56 0 7.24 38.53 0"></polygon>
+          </g>
+          <g>
+            <path d="M6.56,51.14H0V43.35H6.4V45.2H2.29v1.11H6.16v1.8H2.29v1.18H6.56Z"></path>
+            <path d="M13.53,49.86H9.87l-.54,1.28H6.87l3.68-7.79h2.34l3.67,7.79H14.07Zm-1.82-4.33L10.65,48h2.1Z"></path>
+            <path d="M16.87,43.35h6.58V44l-3.59,5.26h3.68v1.9H16.67v-.69l3.67-5.32H16.87Z"></path>
+            <path d="M24.41,43.35H31V44L27.4,49.24h3.68v1.9H24.21v-.69l3.67-5.32H24.41Z"></path>
+            <path d="M34.6,43.35v5.92h3.93v1.87H32.28V43.35Z"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.53 38.54" id="logo_icon">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <g>
+          <polygon points="38.53 22.99 38.53 31.3 0 38.54 0 30.22 38.53 22.99"></polygon>
+          <polygon points="38.53 11.49 38.53 19.81 0 27.05 0 18.73 38.53 11.49"></polygon>
+          <polygon points="38.53 0 38.53 8.33 0 15.56 0 7.24 38.53 0"></polygon>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.8 18.57" id="logo_name">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <g>
+          <path d="M15.64,18.57H0V0H15.25V4.4H5.44V7.06h9.25v4.27H5.44v2.81h10.2Z"></path>
+          <path d="M32.25,15.52H23.51l-1.29,3.05H16.36L25.13,0h5.58l8.74,18.57H33.53ZM27.89,5.2l-2.51,5.91h5Z"></path>
+          <path d="M40.2,0H55.87V1.49L47.32,14h8.77v4.54H39.73V16.92L48.47,4.24H40.2Z"></path>
+          <path d="M58.16,0H73.82V1.49L65.28,14H74v4.54H57.68V16.92L66.42,4.24H58.16Z"></path>
+          <path d="M82.45,0V14.11H91.8v4.46H76.92V0Z"></path>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.89 12.82" id="menu">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <g>
+          <rect x="6.89" width="28" height="2.5"></rect>
+          <rect y="10.32" width="28" height="2.5"></rect>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.03 29.34" id="profile">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <g>
+          <path d="M18,17.47a8.74,8.74,0,1,1,8.73-8.74A8.75,8.75,0,0,1,18,17.47Zm0-15a6.24,6.24,0,1,0,6.23,6.23A6.25,6.25,0,0,0,18,2.5Z"></path>
+          <polygon points="3.04 29.34 8.26 21.76 27.77 21.76 32.99 29.34 36.03 29.34 29.08 19.26 6.95 19.26 0 29.34 3.04 29.34"></polygon>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.98 29.25" id="right">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <polygon points="1.93 29.25 0 27.66 10.74 14.64 0 1.59 1.93 0 13.98 14.64 1.93 29.25"></polygon>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.68 29.25" id="right_arrow">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <polygon points="26.64 0 24.7 1.59 34.41 13.38 0 13.38 0 15.88 34.42 15.88 24.7 27.66 26.64 29.25 38.68 14.64 26.64 0"></polygon>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.15 29.29" id="search">
+    <defs></defs>
+    <g id="Layer_2">
+      <g id="Layer_1-2">
+        <path d="M29.15,27.52l-5-5a13.67,13.67,0,1,0-1.78,1.76l5,5ZM13.69,24.89a11.2,11.2,0,1,1,11.2-11.2A11.21,11.21,0,0,1,13.69,24.89Z"></path>
+      </g>
+    </g>
+  </symbol>
+</svg>

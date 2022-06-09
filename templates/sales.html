@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales | Eazzl</title>
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/images/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/c6ec2e0683.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <!-- All modal section -->
+    <!-- search modal -->
+    <div search-wrapper class="search-wrapper">
+      <div class="search-container">
+        <input
+          search-input
+          class="search__input"
+          placeholder="Type to search..."
+          type="text"
+        />
+        <div class="search-btn__wrapper">
+          <!-- arrow icon -->
+          <svg search-arrow class="icon">
+            <use xlink:href="/images/sprite.svg#right_arrow"></use>
+          </svg>
+          <!-- search icon -->
+          <svg search-icon class="icon active">
+            <use xlink:href="/images/sprite.svg#search"></use>
+          </svg>
+        </div>
+      </div>
+      <svg btn-cancel class="icon search__icon-cancel">
+        <use xlink:href="/images/sprite.svg#cancle"></use>
+      </svg>
+    </div>
+
+    <!-- Header section -->
+    <header>
+      <!-- Promotion bar -->
+      <div class="promotion-bar">
+        <p>Save 5% on Entire Order with Digital Payment</p>
+      </div>
+
+      <!-- NavBar -->
+      <nav class="nav-wrapper nav-wrapper--homepage">
+        <div class="navbar container">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#">
+              <img
+                class="nav__logo--icon active"
+                src="./images/logo/logo_icon.png"
+                alt="Logo Icon"
+              />
+              <img
+                class="nav__logo--text"
+                src="./images/logo/logo_text.png"
+                alt="Logo Text"
+              />
+            </a>
+          </div>
+
+          <!-- Nav links -->
+          <ul class="nav__links">
+            <li nav-link class="profile__mobile">
+              <a href="profile.html"> Profile </a>
+            </li>
+            <li nav-link><a href="index.html">Home</a></li>
+            <li nav-link nav-link-new-arrivals><a>New Arrivals</a></li>
+            <li nav-link nav-link-collections class="collection__navbar">
+              <a>Collections</a>
+            </li>
+            <li nav-link>
+              <a href="best_sellers.html">Best Sellers</a>
+            </li>
+            <li nav-link><a class="active" href="sales.html">Sales</a></li>
+          </ul>
+
+          <!-- New arrivals dropdown (Nav links) -->
+          <ul nav-link-newArrival-wrapper class="nav__links--dropdown">
+            <ul>
+              <li class="dropdown--heading">
+                <a>Men</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Panjabi</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">T-Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Polo</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Jeans</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Chinos</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Joggers</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="dropdown--heading">
+                <a>Women</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Shalwar Kameez</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Tops</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">T-Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Leggings</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="dropdown--heading">
+                <a>Kids</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Panjabi</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">T-Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Polo</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Jeans</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="dropdown--heading">
+                <a>Accessories</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Watches</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Wallet</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Men's Belt</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">Bags</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <svg back-btn-newArrival class="icon icon__left--nav">
+              <use xlink:href="/images/sprite.svg#left"></use>
+            </svg>
+          </ul>
+
+          <!-- Collection dropdown (Nav links) -->
+          <ul nav-link-collections-wrapper class="nav__links--dropdown">
+            <ul>
+              <li class="dropdown--heading">
+                <a>Men</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Panjabi</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">T-Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Polo</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Jeans</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Chinos</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Joggers</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="dropdown--heading">
+                <a>Women</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Shalwar Kameez</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Tops</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">T-Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Leggings</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="dropdown--heading">
+                <a>Kids</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Panjabi</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">T-Shirts</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Polo</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Jeans</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="dropdown--heading">
+                <a>Accessories</a>
+                <ul>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Watches</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Wallet</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Men's Belt</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="collections_men_panjabi.html">Bags</a>
+                  </li>
+                  <li class="dropdown--item">
+                    <a href="new_arrivals.html">View All</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <svg back-btn class="icon icon__left--nav">
+              <use xlink:href="/images/sprite.svg#left"></use>
+            </svg>
+          </ul>
+
+          <!-- Navbar icons (PC) -->
+          <div class="icon-wrapper icon-wrapper-pc">
+            <svg search-btn class="icon icon--navbar">
+              <use xlink:href="/images/sprite.svg#search"></use>
+            </svg>
+            <a bag-btn class="nav__icon-bag" href="your_bag.html">
+              <svg class="icon icon--navbar navbar__bag-icon">
+                <use xlink:href="/images/sprite.svg#bag"></use>
+              </svg>
+              <div class="bag__notification">
+                <p class="bag__product-count"></p>
+              </div>
+            </a>
+            <a href="profile.html">
+              <svg class="icon icon--navbar icon-nav__profile">
+                <use xlink:href="/images/sprite.svg#profile"></use>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Navbar icons (Mobile) -->
+          <div class="icon-wrapper icon-wrapper-mobile">
+            <svg search-btn class="icon icon--navbar">
+              <use xlink:href="/images/sprite.svg#search"></use>
+            </svg>
+            <a class="nav__icon-bag" href="your_bag.html">
+              <svg class="icon icon--navbar navbar__bag-icon">
+                <use xlink:href="/images/sprite.svg#bag"></use>
+              </svg>
+              <div class="bag__notification">
+                <p class="bag__product-count"></p>
+              </div>
+            </a>
+            <div class="hamburger" id="hamburger">
+              <div>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bag popup -->
+          <div bag-wrapper class="bag__wrapper">
+            <!-- When bag is empty -->
+            <div empty-bag class="empty-bag active">
+              <h3>Your bag is empty</h3>
+            </div>
+
+            <!-- When there is product or products in bag -->
+            <div bag-items class="items-bag active">
+              <h3 class="items-bag__title">In Your Bag</h3>
+              <!-- Selected Items -->
+              <section class="bag-items__wrapper">
+                <!-- Item 1 -->
+                <div class="bag__shipping-item">
+                  <img
+                    class="shipping-item__image"
+                    src="/images/product_image/2.jpg"
+                    alt="Product image"
+                  />
+                  <div class="bag__selected-item">
+                    <h3>Eid Collection Panjabi</h3>
+                    <p>Product-code: ABCDEF</p>
+                    <p>Color: Black</p>
+                    <h3>BDT 12,120</h3>
+                    <i class="fa-solid fa-trash-can bag__item-delete"></i>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bag__shipping-item">
+                  <img
+                    class="shipping-item__image"
+                    src="/images/product_image/3.jpg"
+                    alt="Product image"
+                  />
+                  <div class="bag__selected-item">
+                    <h3>Eid Collection Panjabi</h3>
+                    <p>Product-code: ABCDEF</p>
+                    <p>Color: Black</p>
+                    <h3>BDT 12,120</h3>
+                    <i class="fa-solid fa-trash-can bag__item-delete"></i>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bag__shipping-item">
+                  <img
+                    class="shipping-item__image"
+                    src="/images/product_image/4.jpg"
+                    alt="Product image"
+                  />
+                  <div class="bag__selected-item">
+                    <h3>Eid Collection Panjabi</h3>
+                    <p>Product-code: ABCDEF</p>
+                    <p>Color: Black</p>
+                    <h3>BDT 12,120</h3>
+                    <i class="fa-solid fa-trash-can bag__item-delete"></i>
+                  </div>
+                </div>
+              </section>
+
+              <div class="flex space-between bag__subtotal">
+                <h3>Subtotal</h3>
+                <h3>BDT 12,000</h3>
+              </div>
+
+              <!-- View bag Btn (Primary Btn) -->
+              <a href="your_bag.html"
+                ><button class="btn btn--primary btn--block">
+                  View Bag
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Body -->
+    <main class="nav--margin-100">
+      <!-- Top navigation and total product counter -->
+      <div class="link__map-wrapper container">
+        <div class="link__map">
+          <a href="index.html">Home</a>
+          <span>|</span>
+          <a>Sales</a>
+        </div>
+        <div class="item-total">
+          <p item-count></p>
+        </div>
+      </div>
+
+      <!-- All products -->
+      <section class="product-grid grid ultimate-product__grid--1x3 container">
+        <!-- Sale product 1 -->
+        <a href="product_page.html">
+          <div class="product-card">
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image-front"
+                src="/images/product_image/1.jpg"
+                alt="Product image"
+              />
+              <img
+                class="card__image card__image-hover"
+                src="/images/product_image/1 Hover.jpg"
+                alt="Product image"
+              />
+              <div class="card-sales">
+                50% <br />
+                OFF
+              </div>
+            </div>
+            <div class="card__details-wrapper">
+              <h3 class="card__title">Nike Shoes</h3>
+              <p class="card__product-code">Product-code: ABCDEF</p>
+              <h3 class="card__price">BDT 3,000</h3>
+              <h3 class="card__price card__price-previous">BDT 6,000</h3>
+              <div class="card__details-wrapper"></div>
+              <div class="card__details-wrapper"></div>
+              <div class="card__size">
+                <span class="card__size--available">
+                  <p>S</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>M</p>
+                </span>
+                <span class="card__size--available">
+                  <p>L</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>XL</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Sale product 2 -->
+        <a href="product_page.html">
+          <div class="product-card">
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image-front"
+                src="/images/product_image/2.jpg"
+                alt="Product image"
+              />
+              <img
+                class="card__image card__image-hover"
+                src="/images/product_image/2 Hover.jpg"
+                alt="Product image"
+              />
+              <div class="card-sales">
+                50% <br />
+                OFF
+              </div>
+            </div>
+            <div class="card__details-wrapper">
+              <h3 class="card__title">Headphone</h3>
+              <p class="card__product-code">Product-code: ABCDEF</p>
+              <h3 class="card__price">BDT 3,000</h3>
+              <h3 class="card__price card__price-previous">BDT 6,000</h3>
+              <div class="card__details-wrapper"></div>
+              <div class="card__details-wrapper"></div>
+              <div class="card__size">
+                <span class="card__size--available">
+                  <p>S</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>M</p>
+                </span>
+                <span class="card__size--available">
+                  <p>L</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>XL</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Sale product 3 -->
+        <a href="product_page.html">
+          <div class="product-card">
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image-front"
+                src="/images/product_image/3.jpg"
+                alt="Product image"
+              />
+              <img
+                class="card__image card__image-hover"
+                src="/images/product_image/3 Hover.jpg"
+                alt="Product image"
+              />
+              <div class="card-sales">
+                50% <br />
+                OFF
+              </div>
+            </div>
+            <div class="card__details-wrapper">
+              <h3 class="card__title">Women's T-shirt</h3>
+              <p class="card__product-code">Product-code: ABCDEF</p>
+              <h3 class="card__price">BDT 3,000</h3>
+              <h3 class="card__price card__price-previous">BDT 6,000</h3>
+              <div class="card__details-wrapper"></div>
+              <div class="card__details-wrapper"></div>
+              <div class="card__size">
+                <span class="card__size--available">
+                  <p>S</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>M</p>
+                </span>
+                <span class="card__size--available">
+                  <p>L</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>XL</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Sale product 4 -->
+        <a href="product_page.html">
+          <div class="product-card">
+            <div class="card__image-wrapper">
+              <img
+                class="card__image card__image-front"
+                src="/images/product_image/4.jpg"
+                alt="Product image"
+              />
+              <img
+                class="card__image card__image-hover"
+                src="/images/product_image/4 Hover.jpg"
+                alt="Product image"
+              />
+              <div class="card-sales">
+                50% <br />
+                OFF
+              </div>
+            </div>
+            <div class="card__details-wrapper">
+              <h3 class="card__title">Men's Shirt</h3>
+              <p class="card__product-code">Product-code: ABCDEF</p>
+              <h3 class="card__price">BDT 3,000</h3>
+              <h3 class="card__price card__price-previous">BDT 6,000</h3>
+              <div class="card__details-wrapper"></div>
+              <div class="card__details-wrapper"></div>
+              <div class="card__size">
+                <span class="card__size--available">
+                  <p>S</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>M</p>
+                </span>
+                <span class="card__size--available">
+                  <p>L</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>XL</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Sale product 5 -->
+        <a href="product_page.html">
+          <div class="product-card">
+            <div class="card__image-wrapper">
+              <img
+                loading="lazy"
+                class="card__image card__image-front"
+                src="/images/product_image/5.jpg"
+                alt="Product image"
+              />
+              <img
+                loading="lazy"
+                class="card__image card__image-hover"
+                src="/images/product_image/5 Hover.jpg"
+                alt="Product image"
+              />
+              <div class="card-sales">
+                50% <br />
+                OFF
+              </div>
+            </div>
+            <div class="card__details-wrapper">
+              <h3 class="card__title">Men's Watch</h3>
+              <p class="card__product-code">Product-code: ABCDEF</p>
+              <h3 class="card__price">BDT 3,000</h3>
+              <h3 class="card__price card__price-previous">BDT 6,000</h3>
+              <div class="card__details-wrapper"></div>
+              <div class="card__details-wrapper"></div>
+              <div class="card__size">
+                <span class="card__size--available">
+                  <p>S</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>M</p>
+                </span>
+                <span class="card__size--available">
+                  <p>L</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>XL</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Sale product 6 -->
+        <a href="product_page.html">
+          <div class="product-card">
+            <div class="card__image-wrapper">
+              <img
+                loading="lazy"
+                class="card__image card__image-front"
+                src="/images/product_image/6.jpg"
+                alt="Product image"
+              />
+              <img
+                loading="lazy"
+                class="card__image card__image-hover"
+                src="/images/product_image/6 Hover.jpg"
+                alt="Product image"
+              />
+              <div class="card-sales">
+                50% <br />
+                OFF
+              </div>
+            </div>
+            <div class="card__details-wrapper">
+              <h3 class="card__title">Women's Sunglass</h3>
+              <p class="card__product-code">Product-code: ABCDEF</p>
+              <h3 class="card__price">BDT 3,000</h3>
+              <h3 class="card__price card__price-previous">BDT 6,000</h3>
+              <div class="card__details-wrapper"></div>
+              <div class="card__details-wrapper"></div>
+              <div class="card__size">
+                <span class="card__size--available">
+                  <p>S</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>M</p>
+                </span>
+                <span class="card__size--available">
+                  <p>L</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>XL</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Sale product 7 -->
+        <a href="product_page.html">
+          <div class="product-card">
+            <div class="card__image-wrapper">
+              <img
+                loading="lazy"
+                class="card__image card__image-front"
+                src="/images/product_image/7.jpg"
+                alt="Product image"
+              />
+              <img
+                loading="lazy"
+                class="card__image card__image-hover"
+                src="/images/product_image/7 Hover.jpg"
+                alt="Product image"
+              />
+              <div class="card-sales">
+                50% <br />
+                OFF
+              </div>
+            </div>
+            <div class="card__details-wrapper">
+              <h3 class="card__title">Men's Wallet</h3>
+              <p class="card__product-code">Product-code: ABCDEF</p>
+              <h3 class="card__price">BDT 3,000</h3>
+              <h3 class="card__price card__price-previous">BDT 6,000</h3>
+              <div class="card__details-wrapper"></div>
+              <div class="card__details-wrapper"></div>
+              <div class="card__size">
+                <span class="card__size--available">
+                  <p>S</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>M</p>
+                </span>
+                <span class="card__size--available">
+                  <p>L</p>
+                </span>
+                <span class="card__size--unavailable">
+                  <p>XL</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+      <button class="btn__bottom-margin btn btn--primary btn__arrow--220">
+        Load More
+      </button>
+    </main>
+
+    <!-- Primary footer -->
+    <footer class="footer-primary">
+      <div class="container">
+        <section class="footer__top-section grid">
+          <!-- About eazzl section -->
+          <div>
+            <div section-title class="footer__section-title active">
+              <h3>About Eazzl</h3>
+            </div>
+            <div class="footer__section-content">
+              <a href="unavailable_page.html">Our Stories</a>
+              <a href="unavailable_page.html">Careers</a>
+              <a href="unavailable_page.html">Investors</a>
+            </div>
+          </div>
+
+          <!-- Get help section -->
+          <div>
+            <div section-title class="footer__section-title active">
+              <h3>Get Help</h3>
+            </div>
+            <div class="footer__section-content">
+              <a href="unavailable_page.html">Size Guide</a>
+              <a href="unavailable_page.html">Order Status</a>
+              <a href="unavailable_page.html">Shipping</a>
+              <a href="unavailable_page.html">Exchange or Return</a>
+              <a href="unavailable_page.html">Payment Option</a>
+            </div>
+          </div>
+
+          <!-- Support section -->
+          <div>
+            <div section-title class="footer__section-title active">
+              <h3>Support</h3>
+            </div>
+            <div class="footer__section-content active">
+              <a href="contact_us.html">Contact Us</a>
+              <p>Service Center no. 01700000000</p>
+              <p>support@eazzl.com</p>
+            </div>
+          </div>
+
+          <!-- Brand -->
+          <div class="footer__brand">
+            <a href="#">
+              <img class="footer-logo" src="/images/logo/logo.png" alt="Logo" />
+            </a>
+            <div class="footer__brand-social-icon">
+              <a href="https://eazzl.page.link/eazzl" target="blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://eazzl.page.link/eazzlinstagram" target="blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com" target="blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer bottom section -->
+        <section class="footer-bottom">
+          <div class="footer__bottom-section">
+            <div class="footer__copyright">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Eazzl, Inc. All Rights Reserved
+              </p>
+            </div>
+
+            <div class="footer__policy">
+              <a href="unavailable_page.html">Payment Policy</a>
+              <a href="unavailable_page.html">Shipping Policy</a>
+              <a href="unavailable_page.html">Terms & Conditions</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script>
+      //Total Product Counter
+      const productCard = document.querySelectorAll('.product-card');
+      const itemCount = document.querySelector('[item-count]');
+
+      function totalItemCount() {
+        itemCount.innerText = `${productCard.length} items`;
+      }
+      totalItemCount();
+    </script>
+  </body>
+</html>
