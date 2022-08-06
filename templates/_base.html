@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,6 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eazzl | Stay Classy</title>
+
+   <!-- StyleSheet -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static "images/favicon/favicon-32x32.png" %}"
+      type="image/x-icon"
+    />
+
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,11 +27,20 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/c6ec2e0683.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Javascript -->
+    <script defer src="{% static "js/app.js" %}"></script>
+
+
   </head>
   <body>
     <!-- All modal section -->
@@ -34,16 +56,16 @@
         <div class="search-btn__wrapper">
           <!-- arrow icon -->
           <svg search-arrow class="icon">
-            <use xlink:href="/images/sprite.svg#right_arrow"></use>
+            <use xlink:href="{% static "images/sprite.svg#right_arrow" %}"></use>
           </svg>
           <!-- search icon -->
           <svg search-icon class="icon active">
-            <use xlink:href="/images/sprite.svg#search"></use>
+            <use xlink:href="{% static "images/sprite.svg#search" %}"></use>
           </svg>
         </div>
       </div>
       <svg btn-cancel class="icon search__icon-cancel">
-        <use xlink:href="/images/sprite.svg#cancle"></use>
+        <use xlink:href="{% static "images/sprite.svg#cancle" %}"></use>
       </svg>
     </div>
 
@@ -51,7 +73,7 @@
     <header>
       <!-- Promotion bar -->
       <div class="promotion-bar">
-        <p>Save 5% on Entire Order with Digital Payment</p>
+        <p><a href="{% url 'sales' %}">Save 5% on Entire Order with Digital Payment</a></p>
       </div>
 
       <!-- NavBar -->
@@ -62,12 +84,12 @@
             <a href="#">
               <img
                 class="nav__logo--icon active"
-                src="./images/logo/logo_icon.png"
+                src="{% static "./images/logo/logo_icon.png" %}"
                 alt="Logo Icon"
               />
               <img
                 class="nav__logo--text"
-                src="./images/logo/logo_text.png"
+                src="{%static "/images/logo/logo_text.png" %}"
                 alt="Logo Text"
               />
             </a>
@@ -78,15 +100,15 @@
             <li nav-link class="profile__mobile">
               <a href="profile.html"> Profile </a>
             </li>
-            <li nav-link><a class="active" href="index.html">Home</a></li>
-            <li nav-link nav-link-new-arrivals><a>New Arrivals</a></li>
+            <li nav-link><a href="{% url "home" %}">Home</a></li>
+            <li nav-link nav-link-new-arrivals><a href="{% url "new_arrivals" %}">New Arrivals</a></li>
             <li nav-link nav-link-collections class="collection__navbar">
               <a>Collections</a>
             </li>
             <li nav-link>
-              <a href="best_sellers.html">Best Sellers</a>
+              <a href="{% url "best_sellers" %}">Best Sellers</a>
             </li>
-            <li nav-link><a href="sales.html">Sales</a></li>
+            <li nav-link><a href="{% url "sales" %}">Sales</a></li>
           </ul>
 
           <!-- New arrivals dropdown (Nav links) -->
@@ -192,7 +214,7 @@
               </li>
             </ul>
             <svg back-btn-newArrival class="icon icon__left--nav">
-              <use xlink:href="/images/sprite.svg#left"></use>
+              <use xlink:href="{% static "/images/sprite.svg#left" %}"></use>
             </svg>
           </ul>
 
@@ -299,26 +321,33 @@
               </li>
             </ul>
             <svg back-btn class="icon icon__left--nav">
-              <use xlink:href="/images/sprite.svg#left"></use>
+              <use xlink:href="{% static "images/sprite.svg#left" %}"></use>
             </svg>
           </ul>
 
           <!-- Navbar icons (PC) -->
           <div class="icon-wrapper icon-wrapper-pc">
             <svg search-btn class="icon icon--navbar">
-              <use xlink:href="/images/sprite.svg#search"></use>
+              <use xlink:href="{% static "images/sprite.svg#search" %}"></use>
             </svg>
             <a bag-btn class="nav__icon-bag" href="your_bag.html">
               <svg class="icon icon--navbar navbar__bag-icon">
-                <use xlink:href="/images/sprite.svg#bag"></use>
+                <use xlink:href="{% static "images/sprite.svg#bag" %}"></use>
               </svg>
               <div class="bag__notification">
                 <p class="bag__product-count"></p>
               </div>
             </a>
             <a href="profile.html">
+              {% if user.is_authenticated %}
+              Hi {{ user.username }}!
+              <p> <a href="{% url 'account_logout' %}"> Log Out </a></p>
+              {% else %}
+              <p>You are not logged in</p>
+              <a href="{% url 'account_login' %}">Log In</a>
+              {% endif %}
               <svg class="icon icon--navbar icon-nav__profile">
-                <use xlink:href="/images/sprite.svg#profile"></use>
+                <use xlink:href="{% static "images/sprite.svg#profile" %}"></use>
               </svg>
             </a>
           </div>
@@ -326,11 +355,11 @@
           <!-- Navbar icons (Mobile) -->
           <div class="icon-wrapper icon-wrapper-mobile">
             <svg search-btn class="icon icon--navbar">
-              <use xlink:href="/images/sprite.svg#search"></use>
+              <use xlink:href="{% static "images/sprite.svg#search" %}"></use>
             </svg>
             <a class="nav__icon-bag" href="your_bag.html">
               <svg class="icon icon--navbar navbar__bag-icon">
-                <use xlink:href="/images/sprite.svg#bag"></use>
+                <use xlink:href="{% static "images/sprite.svg#bag" %}"></use>
               </svg>
               <div class="bag__notification">
                 <p class="bag__product-count"></p>
@@ -374,18 +403,9 @@
       </nav>
     </header>
 
-      <div class="promotion-banner__bottom">
-        <h2>Join EAZZL and get 15% off</h2>
+    {% block content %}
 
-        <a href="create_account_page.html">
-          <button class="btn btn__arrow btn__arrow--primary btn__arrow--180">
-            Sign Up
-            <svg class="icon icon__right-arrow">
-              <use xlink:href="images/sprite.svg#right_arrow"></use>
-            </svg></button
-        ></a>
-      </div>
-
+    {% endblock content %}
 
     <!-- Primary footer -->
     <footer class="footer-primary">
@@ -432,7 +452,7 @@
           <!-- Brand -->
           <div class="footer__brand">
             <a href="#">
-              <img class="footer-logo" src="/images/logo/logo.png" alt="Logo" />
+              <img class="footer-logo" src="{% static "/images/logo/logo.png" %}" alt="Logo" />
             </a>
             <div class="footer__brand-social-icon">
               <a href="https://eazzl.page.link/eazzl" target="blank">
@@ -471,5 +491,4 @@
       </div>
     </footer>
 
-  </body>
 </html>

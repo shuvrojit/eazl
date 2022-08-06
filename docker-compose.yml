@@ -6,7 +6,7 @@ services:
     volumes:
       - ./data/db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=postgresql
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
   web:
@@ -17,6 +17,8 @@ services:
     ports:
       - "8000:8000"
     environment:
+      - SECRET_KEY=django-insecure-a^(mefr07%pqf(fv205zq&+9^2(men$$k7^9lr=3mjbaw9tf!zs
+      - DEBUG=1
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres

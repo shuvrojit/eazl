@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # django Admin
     path('admin/', admin.site.urls),
+    # users
+    path('accounts/', include("allauth.urls")),
+    # product app
     path('', include('products.urls')),
 ]
