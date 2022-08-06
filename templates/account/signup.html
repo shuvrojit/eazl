@@ -1,0 +1,104 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- Body -->
+    <main class="nav--margin-100">
+      <section class="gap--4x8 input--card input--single-card">
+        <!-- Create Account -->
+        <section class="form-container container--60vw">
+          <h2 class="page-title">Create Account</h2>
+          <form id="create-account__form" method="post">
+            <!-- csrf middleware token -->
+            {% csrf_token %}
+            {{ form.as_p }}
+            <!-- Form input -->
+            <div class="form__input-wrapper">
+              <div class="input__wrapper">
+                <input
+                  id="ca__username"
+                  class="input"
+                  placeholder="Your Name"
+                  type="text"
+                />
+                <i id="success-sign" class="fa-solid fa-circle-check"></i>
+                <i id="error-sign" class="fa-solid fa-circle-exclamation"></i>
+                <p class="error-text">Error Message</p>
+              </div>
+              <div class="input__wrapper">
+                <input
+                  id="ca__phone-no"
+                  class="input"
+                  placeholder="Phone Number"
+                  type="tel"
+                />
+                <i id="success-sign" class="fa-solid fa-circle-check"></i>
+                <i id="error-sign" class="fa-solid fa-circle-exclamation"></i>
+                <p class="error-text">Error Message</p>
+              </div>
+              <div class="input__wrapper">
+                <input
+                  id="ca__email"
+                  class="input"
+                  placeholder="Email (optional)"
+                  type="email"
+                />
+                <i id="success-sign" class="fa-solid fa-circle-check"></i>
+                <i id="error-sign" class="fa-solid fa-circle-exclamation"></i>
+                <p class="error-text">Error Message</p>
+              </div>
+              <div class="input__wrapper">
+                <input
+                  id="ca__password"
+                  class="input"
+                  placeholder="Password"
+                  type="password"
+                />
+                <i id="success-sign" class="fa-solid fa-circle-check"></i>
+                <i id="error-sign" class="fa-solid fa-circle-exclamation"></i>
+                <p class="error-text">Error Message</p>
+              </div>
+              <div class="input__wrapper">
+                <input
+                  id="ca__password-confirm"
+                  class="input"
+                  placeholder="Confirm Password"
+                  type="password"
+                />
+                <i id="success-sign" class="fa-solid fa-circle-check"></i>
+                <i id="error-sign" class="fa-solid fa-circle-exclamation"></i>
+                <p class="error-text">Error Message</p>
+              </div>
+              <div class="input__wrapper">
+                <div class="checkbox">
+                  <input type="checkbox" id="terms-service" />
+                  <label for="terms-service"
+                    >I agree to the
+                    <a href="unavailable_page.html">Terms of Service</a> and
+                    <a href="unavailable_page.html">Privacy Policy</a></label
+                  >
+                </div>
+                <div id="terms-error-message" class="">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  <p class="error-text active">Error Message</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arrow Button -->
+            <button
+              id="create-account__submit-btn"
+              type="submit"
+              class="btn btn__arrow btn__arrow--primary btn--block"
+            >
+              Sign Up
+              <svg class="icon icon__right-arrow">
+                <use xlink:href="/images/sprite.svg#right_arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+{% endblock content %}

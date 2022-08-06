@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<main class="nav--margin-100">
+      <section class="gap--4x8 input--card input--single-card">
+        <section class="form-container container--60vw">
+          <h2 class="page-title">Log In</h2>
+          <form id="create-account__form" method="post">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="submit">Log In</button>
+            </form>
+          <p><a href="{% url 'account_signup' %}">Create Account</a></p>
+        </section>
+      </section>
+</main>
+
+
+{% endblock content %}
